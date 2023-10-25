@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="Beranda.css" />
+  <title>Livingneed</title>
+  <link rel="website icon" type="png" href="../static/img/Logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="BerandaGlobal.css" />
+  <link rel="stylesheet" href="Beranda.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lavishly Yours:wght@400&display=swap" />
+  <style>
+    .Kotak,
+    .Kotak * {
+      box-sizing: border-box;
+    }
+
+    .Kotak {
+      background: #ecf672;
+    }
+
+    .Atas,
+    .Atas * {
+      box-sizing: border-box;
+    }
+
+    .Atas {
+      width: 95px;
+      height: 90px;
+      position: relative
+    }
+
+    .Panel {
+      width: 100%;
+      height: 700;
+    }
+
+    .Logo,
+    .Logo * {
+      box-sizing: border-box;
+    }
+
+    .Logo {
+      width: 95px;
+      height: 90px;
+      position: relative;
+    }
+
+    .Nama,
+    .Nama * {
+      box-sizing: border-box;
+    }
+
+    .Nama {
+      color: #179415;
+      text-align: center;
+      font: 400 50px "Lavishly Yours", sans-serif;
+      position: sticky;
+    }
+
+    .rectangle,
+    .rectangle * {
+      box-sizing: border-box;
+    }
+
+    .rectangle {
+      background: #ecf672;
+      width: 1349px;
+      height: 163px;
+      position: relative;
+      top: 78px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="Kotak">
+    <img class="Atas" src="../static/img/Logo.png" alt="">
+    <span class="Nama">Livingneed</span>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Beranda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="/produk" class="nav-link active" aria-current="page" href="#">Produk</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kategori
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/cemilan">Cemilan Manis</a></li>
+              <li><a class="dropdown-item" href="/cereal">Cereal Import</a></li>
+              <li><a class="dropdown-item" href="/snanck">Snack Import</a></li>
+            </ul>
+          <li class="nav-item">
+            <a href="/about" class="nav-link">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a href="/pesanProduk" class="nav-link">Pesan Produk</a>
+          </li>
+          <li class="nav-item">
+            <a href="/kontak" class="nav-link">Kontak</a>
+          </li>
+          <li class="nav-item">
+            <a href="/templates/" class="nav-link">Login</a>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cari Produk" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Cari</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <a href="/produk" class="btn btn-success" style="margin-left: 40px; margin-top: 30px;">Kembali</a>
+  <p class="Detail" style="margin-top: 50px; margin-left: 75px; font-size: xx-large; font-weight: 600;">Detail Produk
+  </p>
+  <div class="PersegiDetail1" style="width: 1200px; height: 5px; background-color: #ecf672; margin-left: 75px;"></div>
+  <img class="DetailProduk" src="../static/img/marshmallows.png" style="margin-top: 50px; margin-left: 100px; " alt="">
+  <p class="NamaProduk"
+    style="font-weight:600 ; font-size:x-large; margin-left: 320px; margin-top: -200px; position: absolute;">Corniche
+    Snow White Mega Marshmallows 300gr HALAL - Biru</p>
+  <div class="PersegiDetail1"
+    style="width: 860px; height: 5px; background-color: #ecf672; margin-left: 320px; position: absolute; margin-top: -150px;">
+  </div>
+  <p class="KondisiProduk"
+    style="font-weight: 700; font-size: medium; margin-left: 325px; margin-top: -122px; position: absolute;">Kondisi
+    Produk : Baru</p>
+  <p class="Kategori"
+    style="font-weight: 700; font-size: medium; margin-left: 325px; margin-top: -85px; position: absolute;">Kategori :
+    Snack Import</p>
+  <p class="Stock"
+    style="font-weight: 700; font-size: medium; margin-left: 325px; margin-top: -55px; position: absolute;">Stock : 9
+  </p>
+  <p class="minimal pemesanan"
+    style="font-weight: 700; font-size: medium; margin-left: 325px; margin-top: -20px; position: absolute;">Min
+    Pemesanan : 1</p>
+  <p class="Harga" style="font-weight: 700; font-size: x-large; margin-left: 325px; position: absolute; margin-top: 10px;">Rp. 99.000</p>
+  <p class="DeskripsiProduk" style="font-weight: 700; font-size: x-large; margin-left: 100px; margin-top: 130px;">
+    Deskripsi</p>
+    <p class="KondisiProduk" style="font-weight: 600; font-size: medium; margin-left: 100px; margin-top: 10px;">Nestle
+      Coffee mate French Vanilla Powder Coffee Creamer [452 gr] NESTLE Coffee Mate merupakan krimer tanpa susu buatan
+      pabrik terkenal no. 1 di seluruh dunia yaitu NESTLE yg diimpor langsung dari negara USA..Krimer Nestle ini sangat
+      kaya rasa untuk menambah kenikmatan di kopi Anda. Produk ini tanpa laktosa dan tanpa kolesterol sehingga membuat
+      produk ini sangat laris di pasar dunia. Produk ini langsung diproduksi di pabrik Nestle yg berada di USA. Nestle
+      sendiri merupakan produsen makanan dan minuman no. 1 di seluruh dunia dan sudah berdiri sejak 1866 dan masih
+      beroperasi sampai saat ini.</p>
+      <p class="Pengiriman" style="font-weight: 700; font-size: large; margin-left: 100px; margin-top: 30px;">
+        Pengiriman</p>
+        <img class="lokasi2" src="../static/img/Lokasi.png" style="width: 35px; margin-left: 110px;">
+        <p class="LokasiPengiriman" style="font-weight: 700; margin-left: 160px; margin-top: -28px;">Dari Kota Bandung</p>
+        <img class="Ongkir" src="../static/img/Mobil.png" style="width: 35px ; margin-top: 12px; margin-left: 110px;" alt="">
+        <p class="LokasiPengiriman" style="font-weight: 700; margin-left: 160px; margin-top: -28px;">Ongkir Reguler 9rb - 11rb </p>
+
+  <footer id="footer" style="background-color: #ecf672; margin-top: 40px;" class="footer">
+
+    <div class="container ">
+      <div class="row">
+        <div class="col col-sm-auto">
+          <img src="../static/img/Logo.png" alt="" width="90px" style="margin-top: 30px;">
+
+        </div>
+        <div class="col-1">
+          <img src="../static/img/Instagram.png" alt="" width="30px" style="margin-top: 17px; margin-left: 50px;">
+          <img src="../static/img/Tokped.png" alt="" width="35px" style="margin-left: 50px; margin-top: 20px;">
+
+        </div>
+        <div class="col-1">
+          <p style="margin-top: 20px;">@Livingneed</p>
+          <p style="margin-top: 30px;">Livingneed</p>
+        </div>
+        <div class="col-1">
+          <img src="../static/img/Jam.png" alt="" width="50px" style="margin-top: 8px; margin-left: 170px;">
+          <img src="../static/img/Lokasi.png" alt="" width="35px" style="margin-left: 178px; margin-top: 10px;">
+        </div>
+        <div class="col-1">
+          <p style="width: 200px; font-size: 10px; margin-left: 130px; margin-top: 10px; font-weight: bolder;">Open
+            store senin - sabtu close order setiap harinya jam 15.00 Gosend
+            Senin sampai sabtu : 08.00 - 14.00</p>
+          <p style="width: 200px; font-size: 10px; margin-left: 130px; margin-top: 25px; font-weight: bolder;">Kota
+            Bandung, Jawa Barat</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+
+</body>
+
+</html>

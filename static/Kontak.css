@@ -1,0 +1,304 @@
+.group-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-khaki);
+    width: 1440px;
+    height: 163px;
+  }
+  .group-inner,
+  .group-item {
+    position: absolute;
+    top: 24px;
+    left: 58px;
+    width: 128px;
+    height: 116px;
+    object-fit: cover;
+  }
+  .group-inner {
+    top: 25px;
+    left: 204px;
+    width: 47px;
+    height: 42px;
+  }
+  .nama-instagram {
+    position: absolute;
+    top: 36px;
+    left: 269px;
+  }
+  .livingneed,
+  .rectangle-icon {
+    position: absolute;
+    top: 11px;
+    left: 65px;
+  }
+  .rectangle-icon {
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 42px;
+    object-fit: cover;
+  }
+  .livingneed-parent {
+    position: absolute;
+    top: 98px;
+    left: 204px;
+    width: 147px;
+    height: 42px;
+    cursor: pointer;
+  }
+  .open-store-senin {
+    margin: 0;
+  }
+  .kota-bandung-jawa,
+  .open-store-senin-container {
+    position: absolute;
+    top: 28px;
+    left: 677px;
+    font-weight: 600;
+    text-align: left;
+    display: inline-block;
+    width: 285px;
+  }
+  .kota-bandung-jawa {
+    top: 109px;
+  }
+  .group-child1,
+  .group-child2 {
+    position: absolute;
+    top: 20px;
+    left: 616px;
+    width: 61px;
+    height: 44px;
+    object-fit: cover;
+  }
+  .group-child2 {
+    top: 90px;
+    left: 621px;
+    width: 50px;
+    height: 55px;
+  }
+  .rectangle-parent {
+    position: absolute;
+    top: 875px;
+    left: 0;
+    width: 1440px;
+    height: 163px;
+    font-size: var(--font-size-mini);
+  }
+  .kontak-child {
+    position: absolute;
+    top: 271px;
+    left: 19px;
+    width: 517px;
+    height: 418px;
+    object-fit: cover;
+  }
+  .kontak-kami {
+    position: absolute;
+    top: 207px;
+    left: 1110px;
+    font-size: 40px;
+  }
+  .kontak-child1,
+  .kontak-inner,
+  .kontak-item {
+    position: absolute;
+    top: 295px;
+    left: 659px;
+    width: 127px;
+    height: 127px;
+    object-fit: cover;
+  }
+  .kontak-child1,
+  .kontak-inner {
+    top: 590px;
+    left: 1054px;
+    width: 119px;
+    height: 117px;
+  }
+  .kontak-child1 {
+    top: 295px;
+    left: 1046px;
+    width: 127px;
+    height: 127px;
+  }
+  .group-child3,
+  .nama-instagram1 {
+    position: absolute;
+    top: 431px;
+    left: 630px;
+  }
+  .group-child3 {
+    top: 0;
+    left: 0;
+    width: 178px;
+    height: 127px;
+    object-fit: cover;
+  }
+  .livingneed1,
+  .rectangle-group {
+    position: absolute;
+    top: 136px;
+    left: 38px;
+  }
+  .rectangle-group {
+    top: 585px;
+    left: 625px;
+    width: 178px;
+    height: 160px;
+    cursor: pointer;
+  }
+  .livingneedcom {
+    position: absolute;
+    top: 716px;
+    left: 1038px;
+  }
+  .b,
+  .rectangle-div {
+    position: absolute;
+    top: 431px;
+    left: 1035px;
+  }
+  .rectangle-div {
+    top: 0;
+    left: 0;
+    background-color: var(--color-khaki);
+    width: 1440px;
+    height: 89px;
+  }
+  .livingneed2 {
+    position: absolute;
+    top: 4px;
+    left: 139px;
+    font-size: 50px;
+    font-family: var(--font-lavishly-yours);
+    color: #179415;
+  }
+  .kontak-child2 {
+    position: absolute;
+    top: 18px;
+    left: 1349px;
+    background-color: var(--color-gainsboro);
+    width: 6px;
+    height: 53px;
+  }
+  .item {
+    position: absolute;
+    top: 32px;
+    left: 1372px;
+    color: var(--color-white);
+  }
+  .kontak-child3 {
+    left: 1272px;
+    width: 63px;
+    object-fit: cover;
+  }
+  .kontak-child3,
+  .kontak-child4,
+  .kontak-child5 {
+    position: absolute;
+    top: 11px;
+    height: 60px;
+  }
+  .kontak-child4 {
+    left: 584px;
+    background-color: var(--color-gainsboro);
+    border: 1px solid #aba0a0;
+    box-sizing: border-box;
+    width: 661px;
+  }
+  .kontak-child5 {
+    left: 1183px;
+    width: 62px;
+    object-fit: cover;
+  }
+  .search {
+    position: absolute;
+    top: 29px;
+    left: 595px;
+    font-size: 25px;
+    color: #888686;
+  }
+  .kontak-child6 {
+    position: absolute;
+    top: 0;
+    left: 41px;
+    width: 112px;
+    height: 89px;
+    object-fit: cover;
+  }
+  .kontak-child7 {
+    position: absolute;
+    top: 71px;
+    left: 0;
+    background-color: var(--color-white);
+    width: 1440px;
+    height: 66px;
+  }
+  .kategori {
+    position: absolute;
+    top: 92px;
+    left: 323px;
+  }
+  .beranda,
+  .keranjang,
+  .produk,
+  .tentang {
+    position: absolute;
+    top: 92px;
+    left: 186px;
+    cursor: pointer;
+  }
+  .beranda,
+  .keranjang,
+  .tentang {
+    left: 57px;
+  }
+  .keranjang,
+  .tentang {
+    left: 467px;
+  }
+  .keranjang {
+    left: 608px;
+  }
+  .group-child4,
+  .kontak1 {
+    position: absolute;
+    top: 92px;
+    left: 773px;
+  }
+  .group-child4 {
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+    background-color: #72f687;
+    width: 121px;
+    height: 46px;
+  }
+  .login {
+    position: absolute;
+    top: 11px;
+    left: 33px;
+  }
+  .rectangle-container {
+    position: absolute;
+    top: 81px;
+    left: 1297px;
+    width: 121px;
+    height: 46px;
+    cursor: pointer;
+    text-align: left;
+  }
+  .kontak {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 1038px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  

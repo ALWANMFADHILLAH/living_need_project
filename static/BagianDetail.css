@@ -1,0 +1,403 @@
+.group-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-khaki);
+    width: 1440px;
+    height: 163px;
+  }
+  .group-inner,
+  .group-item {
+    position: absolute;
+    top: 24px;
+    left: 58px;
+    width: 128px;
+    height: 116px;
+    object-fit: cover;
+  }
+  .group-inner {
+    top: 30px;
+    left: 230px;
+    width: 30px;
+    height: 30px;
+  }
+  .nama-instagram {
+    position: absolute;
+    top: 36px;
+    left: 269px;
+  }
+  .livingneed,
+  .rectangle-icon {
+    position: absolute;
+    top: 11px;
+    left: 65px;
+  }
+  .rectangle-icon {
+    top: 5px;
+    left: 27px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  .livingneed-parent {
+    position: absolute;
+    top: 98px;
+    left: 204px;
+    width: 147px;
+    height: 42px;
+    cursor: pointer;
+  }
+  .open-store-senin {
+    margin: 0;
+  }
+  .kota-bandung-jawa,
+  .open-store-senin-container {
+    position: absolute;
+    top: 28px;
+    left: 677px;
+    font-weight: 600;
+    text-align: left;
+    display: inline-block;
+    width: 285px;
+  }
+  .kota-bandung-jawa {
+    top: 109px;
+  }
+  .group-child1{
+    position: absolute;
+    top: 25px;
+    left: 616px;
+    width: 61px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .group-child2 {
+    top: 100px;
+    left: 630px;
+    width: 30px;
+    height: 30px;
+  }
+  .rectangle-parent {
+    position: absolute;
+    top: 1591px;
+    left: 0;
+    width: 1440px;
+    height: 163px;
+    font-size: var(--font-size-mini);
+  }
+  .rp-160000 {
+    position: absolute;
+    top: 667px;
+    left: 508px;
+  }
+  .detail-produk1,
+  .stok {
+    position: absolute;
+    top: 727px;
+    left: 502px;
+  }
+  .detail-produk1 {
+    top: 242px;
+    left: 132px;
+    font-size: 35px;
+  }
+  .detail-produk-child,
+  .detail-produk-item {
+    position: absolute;
+    top: 298px;
+    left: 132px;
+    background-color: var(--color-khaki);
+    width: 1158px;
+    height: 4px;
+  }
+  .detail-produk-item {
+    top: 447px;
+    left: 508px;
+    width: 701px;
+  }
+  .kode-produk,
+  .nestle-coffee-mate {
+    position: absolute;
+    left: 508px;
+    text-align: left;
+  }
+  .nestle-coffee-mate {
+    top: 381px;
+    font-size: var(--font-size-xl);
+    display: inline-block;
+    width: 556px;
+  }
+  .kode-produk {
+    top: 508px;
+  }
+  .b,
+  .baru,
+  .minuman {
+    position: absolute;
+    top: 508px;
+    left: 775px;
+  }
+  .baru,
+  .minuman {
+    top: 559px;
+  }
+  .minuman {
+    top: 613px;
+  }
+  .kategori,
+  .kondisi-produk {
+    position: absolute;
+    top: 559px;
+    left: 508px;
+    text-align: left;
+  }
+  .kategori {
+    top: 610px;
+  }
+  .detail-produk-inner {
+    position: absolute;
+    top: 724px;
+    left: 619px;
+    background-color: var(--color-white);
+    width: 42px;
+    height: 42px;
+  }
+  .b1,
+  .rectangle-div {
+    position: absolute;
+    top: 727px;
+    left: 586px;
+  }
+  .rectangle-div {
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: var(--color-palegreen);
+    width: 217px;
+    height: 42px;
+  }
+  .masukkan-dalam-keranjang,
+  .rectangle-group {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+  .rectangle-group {
+    top: 724px;
+    left: 687px;
+    width: 217px;
+    height: 42px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .deskripsi,
+  .pengiriman {
+    position: absolute;
+    top: 885px;
+    left: 123px;
+  }
+  .pengiriman {
+    top: 1299px;
+    font-size: var(--font-size-xl);
+  }
+  .dari-kota-bandung,
+  .ongkir-reguler-9rb {
+    position: absolute;
+    top: 1344px;
+    left: 175px;
+    font-size: var(--font-size-lg);
+  }
+  .ongkir-reguler-9rb {
+    top: 1406px;
+  }
+  .nestle-coffee-mate1 {
+    position: absolute;
+    top: 990px;
+    left: 186px;
+    font-size: var(--font-size-6xl);
+    display: inline-block;
+    text-align: left;
+    width: 1081px;
+  }
+  .detail-produk-child1,
+  .detail-produk-child2 {
+    position: absolute;
+    top: 1337px;
+    left: 133px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  .detail-produk-child2 {
+    top: 1395px;
+  }
+  .group-child3,
+  .group-child4 {
+    position: absolute;
+    border-radius: var(--br-6xl);
+    height: 10px;
+    width: 10px;
+  }
+  .group-child3 {
+    top: 0;
+    left: 0;
+    background-color: var(--color-khaki);
+    width: 364.04px;
+    height: 479px;
+  }
+  .group-child4 {
+    top: 23px;
+    left: 23.04px;
+    width: 308px;
+    height: 428px;
+    object-fit: cover;
+  }
+  .rectangle-container {
+    position: absolute;
+    top: 339px;
+    left: 111.96px;
+    width: 364.04px;
+    height: 479px;
+  }
+  .detail-produk-child3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-khaki);
+    width: 1440px;
+    height: 89px;
+  }
+  .livingneed1 {
+    position: absolute;
+    top: 4px;
+    left: 139px;
+    font-size: 50px;
+    font-family: var(--font-lavishly-yours);
+    color: #179415;
+  }
+  .detail-produk-child4 {
+    position: absolute;
+    top: 18px;
+    left: 1349px;
+    background-color: var(--color-gainsboro);
+    width: 6px;
+    height: 53px;
+  }
+  .item {
+    position: absolute;
+    top: 32px;
+    left: 1372px;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+  }
+  .detail-produk-child5 {
+    position: absolute;
+    top: 11px;
+    left: 1272px;
+    width: 63px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .detail-produk-child6 {
+    position: absolute;
+    top: 11px;
+    left: 584px;
+    background-color: var(--color-gainsboro);
+    border: 1px solid #aba0a0;
+    box-sizing: border-box;
+    width: 661px;
+    height: 60px;
+  }
+  .detail-produk-child7 {
+    position: absolute;
+    top: 11px;
+    left: 1183px;
+    width: 62px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .search {
+    position: absolute;
+    top: 29px;
+    left: 595px;
+    font-size: var(--font-size-6xl);
+    color: #888686;
+  }
+  .detail-produk-child8 {
+    position: absolute;
+    top: 0;
+    left: 41px;
+    width: 90px;
+    height: 75px;
+    object-fit: cover;
+  }
+  .detail-produk-child9 {
+    position: absolute;
+    top: 71px;
+    left: 0;
+    background-color: var(--color-white);
+    width: 1440px;
+    height: 66px;
+  }
+  .beranda,
+  .keranjang,
+  .kontak,
+  .produk,
+  .tentang {
+    left: 186px;
+    cursor: pointer;
+  }
+  .beranda,
+  .keranjang,
+  .kontak,
+  .tentang {
+    left: 57px;
+  }
+  .keranjang,
+  .kontak,
+  .tentang {
+    left: 467px;
+  }
+  .keranjang,
+  .kontak {
+    left: 608px;
+  }
+  .kontak {
+    left: 773px;
+  }
+  .group-child5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-6xl);
+    background-color: var(--color-palegreen);
+    width: 121px;
+    height: 46px;
+  }
+  .group-div,
+  .login {
+    position: absolute;
+    top: 11px;
+    left: 33px;
+  }
+  .group-div {
+    top: 81px;
+    left: 1297px;
+    width: 121px;
+    height: 46px;
+    cursor: pointer;
+    text-align: left;
+    font-size: var(--font-size-xl);
+  }
+  .detail-produk {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 1754px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-11xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  
