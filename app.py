@@ -3,24 +3,12 @@ from pymongo import MongoClient
 import requests
 from datetime import datetime
 from bson import ObjectId
-import os
-from os.path import join, dirname
-from dotenv import load_dotenv
-
-dotenv_path = join(dirname(__file__), '.env')
-load_dotenv(dotenv_path)
-
-MONGODB_URI = os.environ.get("MONGODB_URI")
-DB_NAME = os.environ.get("DB_NAME")
-
-client = MongoClient(MONGODB_URI)
-db = client[DB_NAME]
 
 app = Flask(__name__)
 
 client=MongoClient('mongodb+srv://jaki:123@cluster0.2jeez0y.mongodb.net/?retryWrites=true&w=majority')
 mydb = client.data
-mycol = mydb.bas
+mycol = mydb.base
 
 app.secret_key = "iasjda8hd8qwhouhsaoduhoauihdouh"
 
@@ -51,9 +39,11 @@ def logout():
     return redirect(url_for('home'))
 
 
-@app.route('/dasboard')
+@app.route('/dasboard',methods=['GET'])
 def dashboard():
-    return render_template('AdminDasboard.html')
+    data = mydb.base.find({})
+
+    return render_template('AdminDasboard.html',data=data)
 
 @app.route('/adminproduk')
 def adminproduk():
@@ -87,33 +77,36 @@ def cek():
 def about():
     return render_template('Tentang.html')
 
+@app.route('/pesanProduk')
+def pesanProduk():
+    return render_template('PesanProduk.html')
+
 @app.route('/kontak')
 def kontak():
     return render_template('Kontak.html')
 
-@app.route('/dasboardproduk',methods=['GET'])
-def dasboardproduk():
-    data = mydb.base.find({})
+@app.route('/delete', methods=['GET'])
+def delete():
+    id=request.args.get('_id')
+    mycol.delete_one({'_id':ObjectId(id)})
+    data=list(mydb.base.find({}))
+    return render_template('AdminDasboard.html',data=data)
 
-    return render_template('AdminProduk.html',data=data)
-
-
-@app.route('/add', methods=['POST'])
+@app.route('/pesanProduk', methods=['POST'])
 def tambah():
+    nama_pemesan=request.form.get('nama_pemesan')
     namaitempesan=request.form.get('namaitempesan')
     jumlahitempesan=request.form.get('jumlahitempesan')
     alamatpesan=request.form.get('alamatpesan')
-    price=request.form.get('price')
-    print(namaitempesan,jumlahitempesan,alamatpesan,price)
+    print(nama_pemesan,namaitempesan,jumlahitempesan,alamatpesan)
 
-    my_dict = {'namaitempesan': namaitempesan,
+    my_dict = {'nama_pemesan': nama_pemesan,
+               'namaitempesan': namaitempesan,
                'jumlahitempesan': jumlahitempesan,
-               'alamatpesan': alamatpesan,
-                'price': price
-                }
+               'alamatpesan':alamatpesan}
     
     mycol.insert_one(my_dict)
-    return render_template('TambahProduk.html')
+    return render_template('PesanProduk.html')
 
 if __name__ == '__main__':  
     app.run('0.0.0.0', port=5000, debug=True)

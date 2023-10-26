@@ -77,6 +77,14 @@
             position: relative;
             top: 78px;
         }
+        .table>:not(caption)>*>* {
+    width: 300px;
+    padding: 0.5rem 3.8rem;
+    color: var(--bs-table-color-state,var(--bs-table-color-type,var(--bs-table-color)));
+    background-color: var(--bs-table-bg);
+    border-bottom-width: var(--bs-border-width);
+    box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state,var(--bs-table-bg-type,var(--bs-table-accent-bg)));
+}
     </style>
 </head>
 
@@ -107,23 +115,29 @@
     </div>
     <p class="TextDashboard" style="font-weight: 640; position: absolute; font-size: xx-large; margin-left: 270px; margin-top: -550px;">Dasboard pesanan</p>
     <div class="card" style="width: 18rem; margin-left: 300px; margin-top: -480px; position: absolute;">
-        <table class="table">
-            <thead>
-              <tr>
+        <table class="table" style="margin-top: 20px; position: absolute; margin-left: x20px">
+            <thead>  
+            <tr>
                 <th scope="col">nama_pemesan</th>
-                <th scope="col">nama_pesana</th>
+                <th scope="col">nama_pesanan</th>
                 <th scope="col">jumlah_pesanan</th>
                 <th scope="col">alamat</th>
               </tr>
             </thead>
+            {% for def in data%} {% set nama_pemesan= def.nama_pemesan%}{% set namaitempesan= def.namaitempesan%}{% set jumlahitempesan= def.jumlahitempesan%}{% set alamatpesan= def.alamatpesan%}{% set _id= def._id%}
             <tbody>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th scope="col">{{nama_pemesan}}</th>
+                <th scope="col">{{namaitempesan}}</th>
+                <th scope="col">{{jumlahitempesan}}</th>
+                <th scope="col">{{alamatpesan}}</th>
+                <th><a href="delete?_id={{_id}}">
+                    <button>konfirm</button>
+                </a></th>
             </tbody>
+            {%endfor%}
           </table>
     </div>
+
 </body>
 
 </html>

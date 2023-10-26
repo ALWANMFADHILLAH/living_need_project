@@ -17,24 +17,28 @@
   <link rel="stylesheet" href="Keranjang.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lavishly Yours:wght@400&display=swap" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
   <script>
      function addpesan() {
+            let nama_pemesan=$('#nama_pemesan').val()
             let namaitempesan=$('#namaitempesan').val()
             let jumlahitempesan=$('#jumlahitempesan').val()
             let alamatpesan=$('#alamatpesan').val()
 
             $.ajax({
-                type: 'POST',
-                url: '/add',
-                data: {
+                type:'POST',
+                url:'/pesanProduk',
+                data:{
+                    nama_pemesan:nama_pemesan,
                     namaitempesan:namaitempesan,
                     jumlahitempesan:jumlahitempesan,
                     alamatpesan:alamatpesan
                 },
-                success: function (response) {
-                    alert(response.msg)
-                    window.location.href ='/'
-                }
+                success:function(response){
+            alert('Data Telah berhasil Terkirim')
+            window.location.href = '/dasboard'
+          }
             })
         }
   </script>
@@ -146,7 +150,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Cari Produk" aria-label="Search">
-          <button class="btn btn-outline-success" onclick="addpesan()" type="submit">Cari</button>
+          <button class="btn btn-outline-success" type="submit">Cari</button>
         </form>
       </div>
     </div>
@@ -154,14 +158,19 @@
   </nav>
   <form action="" method="post">
         <p class="pesanprodukuser" style="font-weight: 700; font-size: xx-large; margin-left: 50px; margin-top: 20px;">Pesan Produk</p>
-        <p class="namaitem" style="font-weight: 700; font-size: x-large; margin-left: 50px; margin-top: 20px; " id="namaitempesan">Nama Produk</p>
-        <input type="text" style="margin-left: 250px; width: 300px; margin-top: -40px; position: absolute;">
+        <p class="namapemesan" style="font-weight: 700; font-size: x-large; margin-left: 50px; margin-top: 20px; ">Nama pemesan</p>
+        <input type="text" style="margin-left: 250px; width: 300px; margin-top: -40px; position: absolute;" id="nama_pemesan">
+
+        <p class="namaitem" style="font-weight: 700; font-size: x-large; margin-left: 50px; margin-top: 20px; " >Nama Produk</p>
+        <input type="text" style="margin-left: 250px; width: 300px; margin-top: -40px; position: absolute;" id="namaitempesan">
+
         <p class="jumlahbarang" style="font-weight: 700; font-size: x-large; margin-left: 50px; margin-top: 20px;">Jumlah Barang</p>
         <input type="number" style="margin-left: 250px; position: absolute; margin-top: -40px;" id="jumlahitempesan">
+
         <p class="Alamatpesanan" style="font-weight: 700; font-size: large;  margin-left: 50px; margin-top: 20px;">Alamat Pemesanan</p>
-        <textarea name="Alamat" cols="40" rows="7" id="alamatpesan" style="margin-left: 250px; margin-top: -40px;"
-       ></textarea></tr>
-    <button class="btn-outline-success" onclick="" style="background-color: #179415; color: aliceblue; border-radius: 10px; margin-left: 50px;">pesan</button>
+        <input name="Alamat"  id="alamatpesan" style="width: 300px; margin-left: 250px; position: absolute; margin-top: -40px;""
+       ></input></tr>
+    <button class="btn-outline-success" onclick="addpesan()" type="submit" style="background-color: #179415; color: aliceblue; border-radius: 10px; margin-left: 50px;">pesan</button>
   </form>
   
   <footer id="footer" style="background-color: #ecf672;  margin-top: 45px;" class="footer">
